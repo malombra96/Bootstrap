@@ -1,0 +1,30 @@
+.col {
+  background: #fdca6d;
+  border-radius: 1px;
+  border: 2px solid #fdca6d;
+  height: 100px;
+  margin: 1px;
+}
+
+.container{
+  margin: 50px auto 0px auto;
+  padding: 0px;
+}
+
+.col-6.col-md-3{
+  background: #fdca6d;
+  border-radius: 1px;
+  border: 2px solid #ffffff;
+  height: 100px;
+  margin: 0px;
+  padding: 3px;
+}
+
+.col-sm-12.col-md-6.col-lg{
+  background: #fdca6d;
+  border-radius: 1px;
+  border: 2px solid #ffffff;
+  height: 100px;
+  margin: 0px;
+  padding: 3px;
+}

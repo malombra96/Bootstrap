@@ -1,0 +1,11 @@
+.col {
+  background: #01b795;
+  border-radius: 1px;
+  border: 2px solid #01b795;
+  height: 100px;
+  margin: 1px;
+}
+
+.container{
+  margin-top: 50px
+}
