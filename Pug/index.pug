@@ -5,8 +5,236 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
     title hello, world
-  body
-    
+    link(rel="stylesheet" href="../css/style.css")
+  body(data-spy="scroll" data-target="#navbar" data-offset="57")
+    //Header
+    nav(id="Header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top")
+      .container 
+        a(class="navbar-brand" href="#")
+          img(src="../Assets/Images/platzi-logo.png")
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+          span(class="navbar-toggler-icon")
+        .collapse.navbar-collapse(id="navbar")
+          ul(class="navbar-nav ml-auto")
+            li(class="nav-item")
+              a(class="nav-link" href="#main") La Conferencia
+            li(class="nav-item")
+              a(class="nav-link" href="#speakers") los oradores
+            li(class="nav-item")
+              a(class="nav-link" href="#place-time") El lugar y la fecha
+            li(class="nav-item")
+              a(class="nav-link" href="#conviertete-en-orador") Conviértete en orador
+            li(class="nav-item")
+              a(class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra") Compra de tickets
+    //carousel
+    section(id="main")
+      .carousel.slide.carousel-fade(id="carousel" data-ride="carousel" data-pause="false" data-interval="3000")
+        .carousel-inner
+          .carousel-item.active
+            img(src="../Assets/Images/Hawaii.jpg" class="d-block w-100" alt="...")
+          .carousel-item
+            img(src="../Assets/Images/Hawaii2.jpg" class="d-block w-100" alt="...")
+          .carousel-item
+            img(src="../Assets/Images/Hawaii3.jpeg" class="d-block w-100" alt="...")
+          .overlay 
+            .container
+              .row.align-items-center
+                .col-md-6.offset-md-6.text-center.text-md-right
+                  h1 Platzi Conf Hawaii
+                  abbr(title="Bienvenido" data-toggle="tooltip")
+                    h2 Welina
+                  p(class="d-none d-md-block").
+                    Platzi conf llega por primera vez a Hawaii!! Un evento para 
+                    compartir con nuestra comunidad el conocimiento y experiencia
+                    de los expertos que estan creando el futuro de internet.
+                    Ven a conocer a miembros del Team Platzi a otros Estudiantes
+                    de platzi y a los oradores de primer nivel que tenemos para ti
+                    te esperamos.  
+                  a(href="#" class="btn btn-outline-light") Quiero ser orador
+                  button(type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra") Comprar tickets 
+    //speakers
+    section(id="speakers" class="mt-4 mb-4")
+      .container
+        .row
+          .col.text-center.text-uppercase
+            small Conoce a los
+            h2 Speakers
+        .row
+          .col-md-4.mb-2.col-sm-6
+            .card
+              img(src="../Assets/speakers/sacha.jpg" class="card-img-top" alt="foto de sacha")
+              .card-body
+                h5(class="card-title") Sasha Lifszyc
+                .badges
+                  span(class="badge badge-warning mb-2 ml-2") JavaScript
+                  span(class="badge badge-info mb-2 ml-2") React
+                p(class="card-text").
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, and make up the
+                  bulk of the card's content.
+                .container
+                  .row
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/instagram.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/facebook.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/in.png" alt="foto de sacha")
+                    .col-sm-3  
+                      img(id="red" src="../Assets/Images/github.png" alt="foto de sacha")
+          .col-md-4.mb-2.col-sm-6
+            .card
+              img(src="../Assets/speakers/cvander.jpeg" class="card-img-top" alt="foto de vander")
+              .card-body
+                h5(class="card-title") Sasha Lifszyc
+                .badges
+                  span(class="badge badge-warning mb-2 ml-2") React
+                  span(class="badge badge-danger mb-2 ml-2") Front-end
+                p(class="card-text"). 
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, and make up the
+                  bulk of the card's content.
+                .container
+                  .row
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/instagram.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/facebook.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/in.png" alt="foto de sacha")
+                    .col-sm-3  
+                      img(id="red" src="../Assets/Images/github.png" alt="foto de sacha")
+          .col-md-4.mb-2.col-sm-6
+            .card
+              img(src="../Assets/speakers/freddy.jpeg" class="card-img-top" alt="foto de sacha")
+              .card-body
+                h5(class="card-title") Sasha Lifszyc
+                .badges
+                  span(class="badge badge-primary mb-2 ml-2") Angular
+                  span(class="badge badge-danger mb-2 ml-2") php
+                p(class="card-text").
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's4
+                  standard dummy text ever since the 1500s, and make up the
+                  bulk of the card's content.
+                .container
+                  .row
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/instagram.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/facebook.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/in.png" alt="foto de sacha")
+                    .col-sm-3  
+                      img(id="red" src="../Assets/Images/github.png" alt="foto de sacha")
+          .col-md-4.mb-2.col-sm-6
+            .card
+              img(src="../Assets/speakers/leonidas.jpeg" class="card-img-top" alt="foto de leonidas")
+              .card-body
+                h5(class="card-title") Sasha Lifszyc
+                .badges
+                  span(class="badge badge-success mb-2 ml-2") c
+                  span(class="badge badge-dark mb-2 ml-2") c#
+                p(class="card-text"). 
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, and make up the
+                  bulk of the card's content.
+                .container
+                  .row
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/instagram.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/facebook.png" alt="foto de sacha")
+                    .col-sm-3
+                      img(id="red" src="../Assets/Images/in.png" alt="foto de sacha")
+                    .col-sm-3  
+                      img(id="red" src="../Assets/Images/github.png" alt="foto de sacha")
+    //lugar fecgha y hora
+    section(id="place-time")
+      .container-fluid
+        .row
+          .col-12.col-lg-6.pl-0.pr-0
+            img(src="../Assets/Images/honolulu.jpg" alt="ciudad honolulu")
+          .col-12.col-lg-6.mt-4
+            h2(class="mt-2") Honolulu - Octubre 2025
+            p.
+              Honolulu u Honolulú2​ es la capital y localidad más grande del estado
+              de Hawái, en los Estados Unidos.nota Honolulu es la más sureña de 
+              entre las principales ciudades estadounidenses. Aunque el nombre de 
+              Honolulu se refiere al área urbana en la costa sureste de la isla de
+              Oahu, la ciudad y el condado de Honolulu han formado una ciudad-con
+              dado consolidada que cubre toda la isla (aproximadamente 600 km² de
+              superficie).
+            a(class="btn btn-outline-light mb-4" href="https://es.wikipedia.org/wiki/Honolulu") Conoce más
+    //conviertete en orador 
+    section(id="conviertete-en-orador" class="pt-2 pb-4")
+      .container
+        .row
+          .col.text-center
+            small(class="text-uppercase") Conviertete en un
+            h2() ORADOR
+        .row
+          .col.text-center Anótate como orador para dar una 
+            abbr(title="Charlas de 5 minutos" data-toggle="tooltip").
+              charla ignite
+             .Cúentamos de qué quieres hablar!
+        .row
+          .col.col-md-10.offset-md-1.col-lg-8.offset-lg-2.mt-4 
+            form 
+              .form-row
+                .form-group.col-12.col-md-6
+                  input(type="text" class="form-control" placeholder="Nombre")
+                .form-group.col-12.col-md-6
+                  input(type="text" class="form-control" placeholder="Apellido")
+              .form-row
+                .form-group.col
+                  textarea(name="tarea" class="form-control form-control-lg" placeholder="sobre que quieres hablar")
+                  small(class="form-text text-muted") Recuerda incluir un título para tu charla  
+              .form-row
+                .col
+                  button(type="buttton" class="btn btn-platzi btn-block") Enviar
+    //footer
+    footer(id="footer" class="pb-4 pt-4")
+      .container
+        .row.text-center
+          .col-12.col-lg
+            a(href="#") Preguntas frecuentes
+          .col-12.col-lg
+            a(href="#") Contáctanos
+          .col-12.col-lg
+            a(href="#") Prensa
+          .col-12.col-lg
+            a(href="#") Conferencias 
+          .col-12.col-lg
+            a(href="#") Términos y condiciones 
+          .col-12.col-lg
+            a(href="#") Privacidad 
+          .col-12.col-lg
+            a(href="#") Estudiantes
+    //modal
+    .modal.fade(id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="examp")
+      .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content 
+          .modal-header
+            .h3(class="modal-title" id="exampleModalCenterTitle") Comprar tickets  
+            button(type="button" class="close" data-dismiss="modal" arial-label="Close")
+              span(aria-hiden="true")  &times
+          .modal-body 
+            form
+              .form-row
+                .form-group.col
+                  .input-group.mb-3
+                    .input-group-prepend
+                      span(class="input-group-text" id="basic-addon1") @
+                    input(type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1")
+            .alert.alert-warning(role="alert") Recibiras un correo de confirmación si sales sorteado.
+          .modal-footer
+            button(type="button" class="btn btn-secondary" data-dismiss="modal") Cancelar
+            button(type="button" class="btn btn-platzi") Comprar
     script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")
+    script(src="../Js/index.js")
